@@ -1,0 +1,302 @@
+body {
+    font-size: 16px;
+    font-family: "Arial Black", sans-serif;
+
+}
+
+
+@media (min-width: 992px) {
+    .collapse {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.photodiary {
+    margin: 60px 0;
+
+}
+
+.navbar-brand {
+    font-size: 30px;
+    font-family: 'Inconsolata', monospace;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+
+.terms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    background-color: #f8f9fa;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.slider, .header-wrap {
+    width: 100%;
+    max-width: 1462px;
+    display: table;
+    margin: 0 auto;
+}
+
+i {
+    color: #626262;
+    margin-left: 15px;
+}
+
+.title {
+    display: block;
+    font-size: 1.8em;
+    font-family: "Playfair Display", sans-serif;
+    color: #626262;
+    padding-bottom: 35px;
+}
+p {
+
+    font-size: 0.8em;
+    line-height: 1.8em;
+    color: #626262;
+    font-weight: 400;
+    font-family: "Playfair Display", sans-serif;
+}
+
+.sub-title {
+    font-size: 0.8em;
+    color: #b4ad9e;
+    font-weight: 300;
+    font-family: "Ubuntu", sans-serif;
+    margin: 30px 0;
+}
+
+.nav-link {
+    margin: 0 30px;
+    color: #626262;
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    text-transform: uppercase;
+
+}
+
+.group {
+    WIDTH: 200PX;
+    MARGIN: 0 AUTO;
+}
+
+.sub-title {
+    display: block;
+    text-transform: uppercase;
+}
+
+.blog img {
+    width: 100%;
+}
+
+.blog p {
+    max-height: 65px;
+    overflow-y: hidden;
+    font-size: 0.8em;
+    line-height: 1.8em;
+    color: #626262;
+    font-weight: 400;
+    font-family: "Playfair Display", sans-serif;
+}
+
+.background-f0f0f0 {
+    background: #f0f0f0;
+    margin-bottom: 15px;
+    margin-top: 120px;
+}
+.sign-up {
+    padding-top: 75px;
+
+    text-align: center;
+}
+
+.button{
+    background: transparent;
+    border: 1px solid #606060;
+    color: #606060;
+    font-family: "Playfair Display", sans-serif;
+    padding: 20px 35px;
+    font-size: 23px;
+
+}
+
+
+/* form starting stylings ------------------------------- */
+.group {
+    position: relative;
+    width: 300px;
+    margin-bottom: 45px;
+    padding-bottom: 50px;
+}
+
+input {
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid #757575;
+    background: transparent;
+}
+
+
+
+.term {
+    font-size: 0.8em;
+    font-family: "Playfair Display", sans-serif;
+    color: #000000;
+    margin-left: 15px;
+    font-weight: 800;
+}
+.follow {
+    font-size: 0.8em;
+    font-family: "Playfair Display", sans-serif;
+    color: #000000;
+    margin-left: 15px;
+    font-weight: 800;
+}
+
+
+
+.btn.btn-light{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent;
+    border: 0;
+}
+.btn-light img{
+    width: 25px;
+    height: 25px;
+}
+
+input:focus {
+    outline: none;
+}
+
+/* LABEL ======================================= */
+label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: #606060;
+}
+
+/* BOTTOM BARS ================================= */
+.bar {
+    position: relative;
+    display: block;
+    width: 300px;
+}
+
+.bar:before, .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    position: absolute;
+    background: #999;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+.image {
+    margin-top: 120px;
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+    width: 50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+    -webkit-animation: inputHighlighter 0.3s ease;
+    -moz-animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease;
+}
+
+.plain{
+    padding-top: 120px;
+    padding-bottom: 1300px;
+    text-align: center;
+
+}
+
+
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+    from {
+        background: #999;
+    }
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@-moz-keyframes inputHighlighter {
+    from {
+        background: #999;
+    }
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: #999;
+    }
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
